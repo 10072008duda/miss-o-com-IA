@@ -179,4 +179,70 @@ mostraPergunta();const alternativa(const alternativa of perguntaAtual.alternativ
     botaoAlternativas.textContent = alternativa;
     caixaAlternativas.appendChild(botaoAlternativas);
   }
+}// código omitido
+
+function mostraPergunta() {
+    if (atual >= perguntas.length) {
+        mostraResultado();
+        return;
+    }
+    perguntaAtual = perguntas[atual];
+    caixaPerguntas.textContent = perguntaAtual.enunciado;
+    mostraAlternativas();
+}
+
+// código omitido// código omitido
+
+function mostraPergunta() {
+    if (atual >= perguntas.length) {
+        mostraResultado();
+        return;
+    }
+    perguntaAtual = perguntas[atual];
+    caixaPerguntas.textContent = perguntaAtual.enunciado;
+     caixaAlternativas.textContent = "";
+    mostraAlternativas();
+}
+
+// código omitido// código omitido
+
+function mostraResultado() {
+    textoPergunta.textContent = "Em 2049…";
+}
+
+// código omitido// código omitido
+
+function mostraResultado() {
+    caixaPerguntas.textContent = "Em 2049...";
+    textoResultado.textContent = historiaFinal;
+    caixaAlternativas.textContent = "";
+}
+
+// código omitido// código omitido
+
+function respostaSelecionada(opcaoSelecionada) {
+    const afirmacoes = opcaoSelecionada.afirmacao;
+    historia += afirmacoes + "";
+    atual++;
+    mostraPergunta();
+}
+
+// código omitido127.0.0.1:5500function mostraPergunta() {
+  if (atual >= perguntas.length) {
+    mostraResultado();
+    return;
+  }
+  perguntaAtual = perguntas[atual];
+  caixaPerguntas.textContent = perguntaAtual.enunciado;
+  caixaAlternativas.textContent = "";
+  mostraAlternativas();
+}function mostraResultado() {
+  caixaPerguntas.textContent = "Em 2049...";
+  textoResultado.textContent = historiaFinal;
+  caixaAlternativas.textContent = "";
+}let historiaFinal = "";function respostaSelecionada(opcaoSelecionada) {
+  const afirmacao = opcaoSelecionada.afirmacao;
+  historiaFinal += afirmacao + " ";
+  atual++;
+  mostraPergunta();
 }
