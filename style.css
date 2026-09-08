@@ -101,3 +101,30 @@ function mostrarFato() {
 botaoDescobrir.addEventListener("clicar", mostrarFato);botao.______ = opcao.texto;
 botao.__________('click', () => cafeSelecionado(opcao));
 containerDeOpcoes._________(botao);
+button {
+  background-color: var(--cor-secundaria);
+  color: var(--cor-texto);
+  border: none;
+  border-radius: 15px;
+  padding: 15px;
+}button:hover {
+  background-color: var(--cor-destaque);
+  color: var(--cor-principal);
+}button {
+  background-color: var(--cor-secundaria);
+  color: var(--cor-texto);
+  border: none;
+  border-radius: 15px;
+  padding: 15px;
+  transition: background-color 0.3s;
+}button {
+  background-color: var(--cor-principal);
+  color: var(--cor-destaque);
+  border: none;
+  border-radius: 15px;
+  padding: 15px;
+  transition: background-color 0.3s;
+}button:hover {
+  background-color: var(--cor-destaque);
+  color: var(--cor-secundaria);
+}
