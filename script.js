@@ -232,7 +232,7 @@ function respostaSelecionada(opcaoSelecionada) {
     mostraResultado();
     return;
   }
-  perguntaAtual = perguntas[atual];
+  perguntaAtual = perguntas[atual];Qual é o seu prato ou comida que você comeria todos os dias?
   caixaPerguntas.textContent = perguntaAtual.enunciado;
   caixaAlternativas.textContent = "";
   mostraAlternativas();
@@ -245,7 +245,7 @@ function respostaSelecionada(opcaoSelecionada) {
   historiaFinal += afirmacao + " ";
   atual++;
   mostraPergunta();
-}const perguntas = [
+}const perguntas = [Qual é o seu prato ou comida que você comeria todos os dias?
     {
         enunciado: "Assim que saiu da escola você se depara com uma nova tecnologia, um chat que consegue responder todas as dúvidas que uma pessoa pode ter, ele também gera imagens e áudios hiper-realistas. Qual o primeiro pensamento?",
         alternativas: [
@@ -373,11 +373,10 @@ console.log(dadoD6());i atrás de vídeos, artigos e mais informaçõe sobre com
 ];const caixaPerguntas = document(".caixa-perguntas");
 const perguntas =
       {
-          enunciado "Assim que saiu da escola você se depara com uma nova tecnologia, um chat que consegue responder todas as dúvidas que uma pessoa pode ter, ele também gera imagens e áudios hiper-realistas. Qual o primeiro pensamento?",
-          alternativas: [
-          {
+          enunciado "Qual é o seu prato ou comida que você comeria todos os dias?
+          {todas as comidas 
               texto: "Isso é assustador!",
-             afirmacao: "No início ficou com medo do que essa tecnologia pode fazer.
+             afirmacao: "como de tudo
             }
         ]
     }
