@@ -388,4 +388,18 @@ return unidades[numero];
 
 console.log(unidadeEscolhida(0));function aleatorio(lista) {
         const posicao = Math.random()* lista.length;
-}
+}export const perguntas = [
+// Trecho de código suprimido
+]export function aleatorio (lista){
+// Trecho de código suprimido
+}import {aleatorio} from './aleatorio.js';import {perguntas} from './perguntas.js';<!-- Trecho de código suprimido -->
+
+<script type="module" src="js/aleatorio.js"></script>
+<script type="module" src="js/perguntas.js"></script>
+<script type="module" src="js/script.js"></script>export const perguntas = [
+{export function aleatorio (lista){
+    const posicao = Math.floot(Math.random()* lista.length);
+    return lista[posicao];import {aleatorio} from ‘./aleatorio.js’;
+import {perguntas} from ‘./perguntas.js;<script src="script.js"></script><script src=”js/script.js”></script><script type=”module” src=”js/script.js”></script><script type=”module” src=”js/aleatorio.js”></script>
+<script type=”module” src=”js/perguntas.js”></script>
+<script type=”module” src=”js/script.js”></script>
