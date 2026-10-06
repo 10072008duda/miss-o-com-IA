@@ -479,3 +479,21 @@ console.log(["Eu estudo na ", escola].join());const escola = "Alura Start";
 console.log("Eu estudo na ".concat(escola));const escola = "Alura Start";
 
 console.log(`Eu estudo na ${escola}`);
+    function respostaSelecionada(opcaoSelecionada) {
+    const afirmacoes = aleatorio(opcaoSelecionada.afirmacao);
+    historiaFinal += afirmacoes + " ";
+    if (opcaoSelecionada.proxima != undefined) {
+        atual = opcaoSelecionada.proxima;
+    }
+    mostraPergunta();
+}function respostaSelecionada(opcaoSelecionada) {
+    const afirmacoes = aleatorio(opcaoSelecionada.afirmacao);
+    historiaFinal += afirmacoes + " ";
+    if (opcaoSelecionada.proxima != undefined) {
+        atual = opcaoSelecionada.proxima;
+    } else {
+        mostraResultado();
+        return;
+    }
+    mostraPergunta();
+}
